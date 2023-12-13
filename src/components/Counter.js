@@ -71,13 +71,11 @@ class Counter extends React.Component {
             <div>
                 <h1>Counter App</h1>
                 <button id="increment" onClick={this.handleIncrement}>Increment</button>
-                {/* disabling decrement button if the counter = 0, to avoid negative count */}
                 <button id="decrement" onClick={this.handleDecrement} disabled={counter === 0}>Decrement</button>
                 <button id="reset" onClick={this.resetCounter}>Reset</button>
                 <br />
-                <br />
                 <div>
-                    <label> Increment / Decrement value</label>
+                    <label> Increment / Decrement Counter </label>
                     <input
                         type="number"
                         value={this.state.CustomInput}
