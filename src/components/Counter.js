@@ -56,6 +56,7 @@ class Counter extends React.Component {
         this.setState({
             counter: 0,
             countHistory: [],
+            newParam: 0
         })
     }
     updateHistory(newCount) {
@@ -96,7 +97,7 @@ class Counter extends React.Component {
                     <table>
                         <thead>
                             <tr>
-                                <th>Index</th>
+                             
                                 <th>Count</th>
                             </tr>
                         </thead>
