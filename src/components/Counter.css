@@ -1,0 +1,76 @@
+button {
+    font-size: 16px;
+    margin: 8px 10px;
+    padding: 10px 20px;
+    box-shadow: 5px 5px #4b4646;
+    border-radius: 15px;
+    background-color: #69cd6c;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Style the increment button */
+#increment {
+    background-color: #8def90;
+    border: none;
+}
+
+#increment:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Style the decrement button */
+#decrement {
+    background-color: #ffcccc; 
+}
+
+#decrement:hover {
+    background-color: #ff9999; 
+}
+
+/* Style the reset button */
+#reset {
+    background-color: #ddd;
+}
+
+#reset:hover {
+    background-color: #ccc;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    margin: 20px auto;;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #000; 
+}
+
+th, td {
+    padding: 6px;
+    text-align: center;
+}
+
+input {
+    margin: 8px;
+    padding: 6px;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50; /* Green border color on focus */
+}
+
+.errorMessage {
+    color: red;
+}
