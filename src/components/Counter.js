@@ -38,7 +38,7 @@ class Counter extends React.Component {
             this.setState({ CustomInput: inputValue, errorMessage: "" });
         } else {
             // Handle invalid input (e.g., display an error message or user can use default customInput value of 1 until user give correct input)                   
-            this.setState({ customInput: 1, errorMessage: "Invalid input. Please enter a number or use default number 1" });
+            this.setState({ customInput: 1, errorMessage: "Invalid message. Please enter a number or use default number 1" });
         }
     }
 
@@ -60,7 +60,7 @@ class Counter extends React.Component {
     updateHistory(newCount) {
         const newHistory = [...this.state.countHistory];
         if (newHistory.length >= 5) {
-            newHistory.shift(); // Remove the oldest count if history size exceeds 5
+            newHistory.shift(); 
         }
         newHistory.push(newCount);
         this.setState({ countHistory: newHistory });
@@ -70,8 +70,6 @@ class Counter extends React.Component {
         return (
             <div>
                 <h1>Counter App</h1>
-                <h2>Count: {this.state.counter}</h2>
-
                 <button id="increment" onClick={this.handleIncrement}>Increment</button>
                 {/* disabling decrement button if the counter = 0, to avoid negative count */}
                 <button id="decrement" onClick={this.handleDecrement} disabled={counter === 0}>Decrement</button>
