@@ -10,6 +10,7 @@ class Counter extends React.Component {
             inputFocus: false,
             countHistory: [],
             errorMessage: "",
+            newParam : 1
         };
     }
 
